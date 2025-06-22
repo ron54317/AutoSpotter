@@ -72,7 +72,9 @@
             
             <p><strong>User Content:</strong> Vehicle photos, car collection data, specifications, friend connections, location data for car spottings, shared images, and community verification data.</p>
             
-            <p><strong>Device & Usage Data:</strong> Device information, app version, usage patterns, error logs, and AI detection metrics.</p>
+            <p><strong>Device & Usage Data:</strong> (superseded by the following bullet)</p>
+            
+            <p><strong>Device, Usage & Diagnostics Data:</strong> Device model and OS version, anonymised App Instance ID, screen flow events, error logs, and crash diagnostics (stack traces) – <em>only</em> when you have enabled the "Analytics & Crash Reports" toggle.</p>
             
             <p><strong>App Permissions:</strong> We request the following permissions to provide app functionality:</p>
             <ul>
@@ -84,9 +86,10 @@
             </ul>
 
             <h2>3. Third-Party Services</h2>
-            <p>We use Firebase (Authentication, Cloud Storage, Firestore, Analytics), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), and MapLibre GL (mapping). These services may collect device information and have their own privacy policies:</p>
+            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), and MapLibre GL (mapping). Firebase Analytics is only enabled with your explicit consent and can be disabled at any time in Settings. These services may collect device information and have their own privacy policies:</p>
             <ul>
                 <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
+                <li><a href="https://firebase.google.com/support/privacy#crashlytics" target="_blank">Firebase Crashlytics Privacy Terms</a></li>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li><a href="https://maplibre.org/privacy-policy/" target="_blank">MapLibre Privacy Policy</a></li>
             </ul>
@@ -106,8 +109,15 @@
             <h2>5. Data Security & Storage</h2>
             <p>Your data is stored on secure Firebase servers with encrypted transmission, secure authentication, and access controls. Passwords are hashed, never stored in plain text. Car detection and privacy blurring (license plates/faces) occur on your device, not our servers.</p>
 
+            <h2>5.1. Analytics & Crash Reports Consent</h2>
+            <p>We only collect anonymised analytics events (Firebase Analytics) and crash diagnostics (Firebase Crashlytics) after <em>you</em> have enabled the "Analytics & Crash Reports" switch found in the in-app Settings or on first-run consent screen.  When the switch is off, both services remain completely disabled and no data leaves your device.  You may toggle this preference at any time and the change takes immediate effect.  Turning the switch off also honours California's "Do Not Sell or Share" right under the CPRA.</p>
+
+            <p>The analytics data includes a random App Instance ID, generic device/OS model, screen flows and anonymised event counts.  Crash reports include a stack-trace, device model/OS version and the last used screen name; they <strong>never</strong> contain photo binaries, precise location, e-mail address or any text you typed.</p>
+
+            <p>You can delete previously collected analytics/crash data by deleting your account or by e-mailing us with the subject line "Analytics Deletion Request".</p>
+
             <h2>6. Data Sharing</h2>
-            <p>We don't sell your personal information. We only share data when:</p>
+            <p>We do <em>not</em> sell your personal data to third parties. Data is shared solely with trusted service providers to enable core app functionality, under strict confidentiality agreements and in accordance with applicable privacy laws. We only share data when:</p>
             <ul>
                 <li>Required by law</li>
                 <li>With service providers (Firebase) under confidentiality agreements</li>
@@ -137,7 +147,7 @@
             <ul>
                 <li>Access and edit your profile data</li>
                 <li>Delete individual photos or your entire account</li>
-                <li>Export your car collection</li>
+                <li>Export your car collection <em>or download a full machine-readable archive of your personal data</em></li>
                 <li>Manage friend connections</li>
                 <li>Control location sharing and app permissions</li>
                 <li>Opt-out of non-essential communications</li>
@@ -163,18 +173,33 @@
                 <li><strong>Reporting Process:</strong> Users can report photos they believe violate our terms of service or community guidelines</li>
                 <li><strong>Report Information:</strong> When you submit a report, we collect your user ID, the reported photo's details, and your reason for reporting</li>
                 <li><strong>Admin Review:</strong> All reports are reviewed by administrators who may take action if necessary</li>
+                <li><strong>Removal Criteria:</strong> Photos may be removed if they contain offensive or illegal content, infringe copyright, violate private property or personal privacy, or otherwise breach our Terms of Service or community guidelines</li>
                 <li><strong>Possible Actions:</strong> Administrators may remove reported photos entirely or remove location data from photos</li>
                 <li><strong>Notifications:</strong> If your photo is removed or modified due to a report, you will receive a notification in the app</li>
                 <li><strong>Report Privacy:</strong> Your identity as a reporter is not shared with the photo owner</li>
                 <li><strong>Data Retention:</strong> Report data is retained for moderation purposes and to maintain platform integrity</li>
             </ul>
 
+            <h2>9.2. Photo Watermarking</h2>
+            <p>AutoSpotter automatically adds a watermark to all photos processed through the app:</p>
+            <ul>
+                <li><strong>Watermark Content:</strong> All photos receive a subtle "AutoSpotter" watermark in the bottom-right corner</li>
+                <li><strong>Processing:</strong> Watermarking is applied after privacy blurring but before saving or uploading</li>
+                <li><strong>Local Processing:</strong> All watermarking occurs locally on your device</li>
+                <li><strong>Purpose:</strong> Watermarks help identify content from our app and protect intellectual property</li>
+                <li><strong>Non-removable:</strong> Watermarks cannot be disabled and are a core feature of the app</li>
+            </ul>
+
             <h2>10. Important Notes</h2>
-            <p><strong>Children:</strong> App not intended for users under 13. We don't knowingly collect children's data.</p>
+            <p><strong>Children:</strong> We do not knowingly allow registration or use of AutoSpotter by children under the age of 13. If you are a parent or guardian and believe your child has provided us with personal information, please contact us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> and we will promptly delete such information.</p>
             
             <p><strong>Data Retention:</strong> Data kept while account is active or as required by law. Deleted accounts are purged within 30 days.</p>
             
             <p><strong>AI Accuracy:</strong> AI features make best efforts but aren't 100% guaranteed. Users should verify before sharing.</p>
+            
+            <p><strong>Third-Party Data Processing:</strong> While we use Firebase services, all sensitive processing (car detection, privacy blurring, watermarking) occurs locally on your device for enhanced privacy.</p>
+            
+            <p><strong>Google Play Store:</strong> This app is distributed through the Google Play Store and complies with Google's privacy policies and developer terms.</p>
 
             <h2>11. Developer Information & Contact</h2>
             <p><strong>Developer:</strong> Zarnox2525</p>
@@ -184,7 +209,26 @@
             <h2>12. Policy Updates</h2>
             <p>We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new policy on this page and updating the "Last Updated" date. We may also notify you through the app. Your continued use of the app after any changes constitutes acceptance of the updated policy.</p>
 
-            <p><em>Last Updated: January 15, 2025</em></p>
+            <h2>13.Data Transfers</h2>
+            
+            <p><strong>Data Protection:</strong> We implement appropriate technical and organizational measures to protect personal data against unauthorized access, alteration, disclosure, or destruction.</p>
+            
+            <p><strong>Cross-Border Data Transfer:</strong> Your data may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for international data transfers.</p>
+            
+            <p><strong>Legal Basis for Processing:</strong> We process your data based on:</p>
+            <ul>
+                <li>Consent for location sharing and non-essential features</li>
+                <li>Legitimate interest for app functionality and community features</li>
+                <li>Contract performance for account management</li>
+                <li>Legal obligation for compliance requirements</li>
+            </ul>
+
+            <h2>14. GDPR/CCPA Rights</h2>
+            <p><strong>Right to Opt-Out of Sale or Sharing (CCPA):</strong> AutoSpotter does <em>not</em> sell personal information.  If you would nevertheless like to record an explicit opt-out under the CCPA/CPRA, please email us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with the subject line "CCPA Opt-Out".</p>
+
+            <p><em>Last Updated: June 22, 2025</em></p>
+            <!-- Previous date retained for changelog reference -->
+            <!-- <p><em>Last Updated: January 15, 2025</em></p> -->
         </div>
     </div>
 </body>
