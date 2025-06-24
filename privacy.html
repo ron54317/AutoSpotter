@@ -72,9 +72,7 @@
             
             <p><strong>User Content:</strong> Vehicle photos, car collection data, specifications, friend connections, location data for car spottings, shared images, and community verification data.</p>
             
-            <p><strong>Device & Usage Data:</strong> (superseded by the following bullet)</p>
-            
-            <p><strong>Device, Usage & Diagnostics Data:</strong> Device model and OS version, anonymised App Instance ID, screen flow events, error logs, and crash diagnostics (stack traces) – <em>only</em> when you have enabled the "Analytics & Crash Reports" toggle.</p>
+            <p><strong>Device & Usage Data:</strong> Device model and OS version for app compatibility and functionality.</p>
             
             <p><strong>App Permissions:</strong> We request the following permissions to provide app functionality:</p>
             <ul>
@@ -86,10 +84,9 @@
             </ul>
 
             <h2>3. Third-Party Services</h2>
-            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), and MapLibre GL (mapping). Firebase Analytics is only enabled with your explicit consent and can be disabled at any time in Settings. These services may collect device information and have their own privacy policies:</p>
+            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), and MapLibre GL (mapping). These services may collect device information and have their own privacy policies:</p>
             <ul>
                 <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
-                <li><a href="https://firebase.google.com/support/privacy#crashlytics" target="_blank">Firebase Crashlytics Privacy Terms</a></li>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li><a href="https://maplibre.org/privacy-policy/" target="_blank">MapLibre Privacy Policy</a></li>
             </ul>
@@ -104,20 +101,19 @@
                  <li>Enable community verification features</li>
                  <li>Improve app functionality and fix issues</li>
                  <li>Send important app notifications</li>
+                 <li>Analyze car data to maintain and improve our specifications database</li>
             </ul>
+
+            <h2>4.1. Car Specifications Database Management</h2>
+            <p>We analyze car brand and model data from our database to identify vehicles that may need additional specifications. This helps us maintain accurate car information for all users. Only vehicle identification data (not personal information) is processed for database improvement purposes.</p>
 
             <h2>5. Data Security & Storage</h2>
             <p>Your data is stored on secure Firebase servers with encrypted transmission, secure authentication, and access controls. Passwords are hashed, never stored in plain text. Car detection and privacy blurring (license plates/faces) occur on your device, not our servers.</p>
 
-            <h2>5.1. Analytics & Crash Reports Consent</h2>
-            <p>We only collect anonymised analytics events (Firebase Analytics) and crash diagnostics (Firebase Crashlytics) after <em>you</em> have enabled the "Analytics & Crash Reports" switch found in the in-app Settings or on first-run consent screen.  When the switch is off, both services remain completely disabled and no data leaves your device.  You may toggle this preference at any time and the change takes immediate effect.  Turning the switch off also honours California's "Do Not Sell or Share" right under the CPRA.</p>
 
-            <p>The analytics data includes a random App Instance ID, generic device/OS model, screen flows and anonymised event counts.  Crash reports include a stack-trace, device model/OS version and the last used screen name; they <strong>never</strong> contain photo binaries, precise location, e-mail address or any text you typed.</p>
-
-            <p>You can delete previously collected analytics/crash data by deleting your account or by e-mailing us with the subject line "Analytics Deletion Request".</p>
 
             <h2>6. Data Sharing</h2>
-            <p>We do <em>not</em> sell your personal data to third parties. Data is shared solely with trusted service providers to enable core app functionality, under strict confidentiality agreements and in accordance with applicable privacy laws. We only share data when:</p>
+            <p><strong>PERMANENT POLICY: AutoSpotter will NEVER sell your personal information to third parties.</strong> This is a core commitment that cannot be changed. Data is shared solely with trusted service providers to enable core app functionality, under strict confidentiality agreements and in accordance with applicable privacy laws. We only share data when:</p>
             <ul>
                 <li>Required by law</li>
                 <li>With service providers (Firebase) under confidentiality agreements</li>
@@ -158,12 +154,12 @@
             
             <p><strong>Individual Content:</strong> Delete photos/entries anytime through the app. Removed within 24 hours.</p>
             
-            <p><strong>What's Deleted:</strong> Profile info, photos, collection data, friend connections, location data, and activity logs. Some anonymized data may be retained for analytics.</p>
+            <p><strong>What's Deleted:</strong> Profile info, photos, collection data, friend connections, location data, and activity logs.</p>
 
             <h2>9. Special Features</h2>
             <p><strong>AI Detection:</strong> Car detection and privacy blurring (license plates/faces) run locally on your device.</p>
             
-            <p><strong>Community Features:</strong> Users can verify car spot locations. Verification data is anonymized and helps improve spot accuracy.</p>
+            <p><strong>Community Features:</strong> Users can verify car spot locations. Verification data is anonymized and helps improve spot accuracy. <strong>Location Confirmation:</strong> Cars without verification in the last 3 days are automatically hidden from the public map to maintain data quality, but remain visible to the original spotter.</p>
             
             <p><strong>Location & Mapping:</strong> Our interactive map displays car spotting locations and allows you to explore the automotive community. Precise location data is collected only when you choose to use mapping features. Location information is associated with individual car photos when you enable it. Map data is processed locally on your device using MapLibre GL. All location sharing is under your control - you can choose to share car photos with or without location data for each individual photo.</p>
 
@@ -217,17 +213,18 @@
             
             <p><strong>Legal Basis for Processing:</strong> We process your data based on:</p>
             <ul>
-                <li>Consent for location sharing and non-essential features</li>
+                <li>Consent for location sharing and optional features</li>
                 <li>Legitimate interest for app functionality and community features</li>
                 <li>Contract performance for account management</li>
                 <li>Legal obligation for compliance requirements</li>
             </ul>
 
             <h2>14. GDPR/CCPA Rights</h2>
-            <p><strong>Right to Opt-Out of Sale or Sharing (CCPA):</strong> AutoSpotter does <em>not</em> sell personal information.  If you would nevertheless like to record an explicit opt-out under the CCPA/CPRA, please email us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with the subject line "CCPA Opt-Out".</p>
+            <p><strong>Permanent No-Sale Policy (CCPA):</strong> AutoSpotter has a <strong>permanent, unchangeable policy</strong> of never selling personal information. This is not just a default setting - it's a core principle built into our app. We will NEVER sell your data, regardless of any future business changes or pressures. No action is required from you, and this protection cannot be disabled. Your personal information is completely safe from commercial sale, forever.</p>
 
-            <p><em>Last Updated: June 22, 2025</em></p>
+            <p><em>Last Updated: January 16, 2025</em></p>
             <!-- Previous date retained for changelog reference -->
+            <!-- <p><em>Last Updated: June 22, 2025</em></p> -->
             <!-- <p><em>Last Updated: January 15, 2025</em></p> -->
         </div>
     </div>
