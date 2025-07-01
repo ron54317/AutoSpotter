@@ -84,18 +84,24 @@
             </ul>
 
             <h2>3. Third-Party Services</h2>
-            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), and MapLibre GL (mapping). These services may collect device information and have their own privacy policies:</p>
+            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), Google Gemini AI (AI car identification), and MapLibre GL (mapping). These services may collect device information and have their own privacy policies:</p>
             <ul>
                 <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
+                <li><a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google Gemini API Terms</a></li>
                 <li><strong>MapLibre GL:</strong> Open-source mapping library that processes data locally on your device with no data collection or external transmission</li>
             </ul>
+
+            <h2>3.1. AI Car Detection Service</h2>
+            <p>AutoSpotter includes optional AI car identification using Google's Gemini API. When used, photos are temporarily processed by Google's servers (not permanently stored), with a 2-detection limit per user. Only car photos are transmitted - no personal data. This feature is completely optional.</p>
 
             <h2>4. How We Use Your Information</h2>
                          <p>We use your data to:</p>
              <ul>
                  <li>Manage your account and car collection</li>
                  <li>Process photos with AI detection and automatic privacy blurring</li>
+                 <li>Provide AI-powered car identification through Google Gemini API (when you choose to use this feature)</li>
+                 <li>Track AI detection usage to enforce the 2-detection limit per user</li>
                  <li>Enable social features and friend connections</li>
                  <li>Provide location-based mapping and car spotting features</li>
                  <li>Enable community verification features</li>
@@ -157,7 +163,9 @@
             <p><strong>What's Deleted:</strong> Profile info, photos, collection data, friend connections, location data, and activity logs.</p>
 
             <h2>9. Special Features</h2>
-            <p><strong>AI Detection:</strong> Car detection and privacy blurring (license plates/faces) run locally on your device.</p>
+            <p><strong>Local AI Detection:</strong> Basic car detection and privacy blurring (license plates/faces) run locally on your device using TensorFlow Lite and Google ML Kit.</p>
+            
+            <p><strong>Cloud AI Identification:</strong> Optional car identification using Google's Gemini AI. Photos are sent to Google's API for analysis (not permanently stored), with 2 free uses per user. Results include confidence scores - verify before relying on them.</p>
             
             <p><strong>Community Features:</strong> Users can verify car spot locations. Verification data is anonymized and helps improve spot accuracy. <strong>Location Confirmation:</strong> Cars without verification in the last 3 days are automatically hidden from the public map to maintain data quality, but remain visible to the original spotter.</p>
             
@@ -193,7 +201,9 @@
             
             <p><strong>AI Accuracy:</strong> AI features make best efforts but aren't 100% guaranteed. Users should verify before sharing.</p>
             
-            <p><strong>Third-Party Data Processing:</strong> While we use Firebase services, all sensitive processing (car detection, privacy blurring, watermarking) occurs locally on your device for enhanced privacy.</p>
+            <p><strong>Third-Party Data Processing:</strong> While we use Firebase services, most sensitive processing (basic car detection, privacy blurring, watermarking) occurs locally on your device for enhanced privacy. The optional AI car identification feature uses Google's Gemini API with secure transmission and no permanent storage.</p>
+            
+            <p><strong>AI Service Compliance:</strong> Our use of Google's Gemini API complies with Google's AI Principles and privacy policies. The service is designed to respect user privacy while providing accurate car identification.</p>
             
             <p><strong>Google Play Store:</strong> This app is distributed through the Google Play Store and complies with Google's privacy policies and developer terms.</p>
 
@@ -222,7 +232,7 @@
             <h2>14. GDPR/CCPA Rights</h2>
             <p><strong>Permanent No-Sale Policy (CCPA):</strong> AutoSpotter has a <strong>permanent, unchangeable policy</strong> of never selling personal information. This is not just a default setting - it's a core principle built into our app. We will NEVER sell your data, regardless of any future business changes or pressures. No action is required from you, and this protection cannot be disabled. Your personal information is completely safe from commercial sale, forever.</p>
 
-            <p><em>Last Updated: January 16, 2025</em></p>
+            <p><em>Last Updated: January 22, 2025</em></p>
             <!-- Previous date retained for changelog reference -->
             <!-- <p><em>Last Updated: June 22, 2025</em></p> -->
             <!-- <p><em>Last Updated: January 15, 2025</em></p> -->

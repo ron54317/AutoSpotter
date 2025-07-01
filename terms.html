@@ -78,13 +78,17 @@
                 <li>Car rarity classification and tracking</li>
                 <li>Social features including friends and sharing</li>
                 <li>Profile customization</li>
-                <li>AI-powered car detection</li>
+                <li>AI-powered car detection (local and cloud-based)</li>
+                <li>Intelligent car identification using Google Gemini AI (optional, with usage limits)</li>
                 <li>Location-based car mapping and community features</li>
                 <li>Image sharing integration and automatic processing</li>
                 <li>Advanced filtering and validation systems</li>
             </ul>
 
-            <p><strong>Accuracy Disclaimers:</strong> Location features rely on device GPS and may vary in accuracy. Community verification is user-generated and not guaranteed to be 100% accurate. Use your own judgment and AutoSpotter is not liable for location or verification inaccuracies.</p>
+            <h2>2.1. AI Car Identification Service</h2>
+            <p>AutoSpotter offers optional AI car identification using Google's Gemini API. Each user gets 2 free uses. Photos are temporarily sent to Google for analysis (not permanently stored). Results are provided as-is with confidence scores - verify before relying on them. Completely optional feature.</p>
+
+            <p><strong>Accuracy Disclaimers:</strong> Location features rely on device GPS and may vary in accuracy. Community verification is user-generated and not guaranteed to be 100% accurate. AI car identification provides best-effort results with confidence scores but is not guaranteed to be 100% accurate. Use your own judgment and AutoSpotter is not liable for location, verification, or AI identification inaccuracies.</p>
 
             <h2>3. User Accounts and Registration</h2>
             <p>3.1. To use AutoSpotter, you must create an account. You agree to:</p>
@@ -140,6 +144,9 @@
                 <li>Using deepfakes or artificially generated images of cars</li>
                 <li>Uploading images that violate copyright or intellectual property rights</li>
                 <li>Misusing location, verification, or privacy features for malicious purposes</li>
+                <li>Attempting to circumvent AI detection usage limits or abuse the AI identification service</li>
+                <li>Using the AI identification feature for non-automotive or inappropriate content</li>
+                <li>Reverse engineering or attempting to extract the AI service endpoints or API keys</li>
             </ul>
 
             <h2>6. Content Moderation and Enforcement</h2>
@@ -223,19 +230,29 @@
             </ul>
 
             <h2>9. AI Features</h2>
-            <p>9.1. Car Detection:</p>
+            <p>9.1. Local Car Detection:</p>
             <ul>
                 <li>The app uses on-device AI technology (TensorFlow Lite) to detect if photos contain cars</li>
                 <li>Car detection helps verify that uploaded content contains vehicles</li>
                 <li>All car detection processing happens locally on your device</li>
-                <li>No images are sent to external servers for car detection</li>
+                <li>No images are sent to external servers for basic car detection</li>
             </ul>
             
-            <p>9.2. AI Accuracy Disclaimer:</p>
+            <p>9.2. Cloud AI Car Identification:</p>
             <ul>
-                <li>Our car detection system makes best efforts to identify vehicles correctly but is not guaranteed to be 100% accurate</li>
+                <li>Optional AI car identification using Google's Gemini API (2 free uses per user)</li>
+                <li>Photos temporarily sent to Google for analysis (not permanently stored)</li>
+                <li>Users should verify AI results before relying on them</li>
+                <li>Completely optional - all app features work without this service</li>
+            </ul>
+            
+            <p>9.3. AI Accuracy Disclaimer:</p>
+            <ul>
+                <li>Both local and cloud AI systems make best efforts to identify vehicles correctly but are not guaranteed to be 100% accurate</li>
                 <li>Users should verify all AI-generated information before relying on it</li>
-                <li>The AI system does not learn from or adapt based on user data</li>
+                <li>AI identification results include confidence scores to help users assess reliability</li>
+                <li>The local AI system does not learn from or adapt based on user data</li>
+                <li>Cloud AI results depend on Google's service availability and may be temporarily unavailable</li>
             </ul>
 
             <h2>10. Social Features and Friendship</h2>
@@ -312,7 +329,9 @@
             <p>AutoSpotter reserves the right to update the app, modify these terms with notice, terminate violating accounts, and adjust feature functionality.</p>
 
             <h2>15. Limitation of Liability</h2>
-            <p>AutoSpotter is not liable for: user content accuracy, personal injury, data loss, service issues, user disputes, AI/location/verification inaccuracies, privacy issues from user choices, or any problems arising from app feature usage.</p>
+            <p>AutoSpotter is not liable for: user content accuracy, personal injury, data loss, service issues, user disputes, AI/location/verification inaccuracies, privacy issues from user choices, third-party AI service interruptions or inaccuracies, decisions made based on AI identification results, Google's handling of data according to their privacy policies, or any problems arising from app feature usage.</p>
+            
+            <p><strong>15.1. AI Service Disclaimers:</strong> AI results are provided "as-is" with no accuracy guarantee. Users must verify results. AutoSpotter not responsible for incorrect identifications. Service availability depends on Google's API.</p>
 
             <h2>16. Termination</h2>
             <p>Accounts may be terminated for terms violations, inactivity, user request, legal requirements, or feature misuse. Termination results in loss of access and deletion of all associated data including content, connections, and interaction history.</p>
@@ -321,7 +340,7 @@
 
             <p><strong>Contact:</strong> Email zernoxi6@gmail.com (Developer: Zarnox2525). Include "Privacy Request" or "Legal Request" in subject line for specific inquiries.</p>
 
-            <p><em>Last Updated: June 22, 2025</em></p>
+            <p><em>Last Updated: January 22, 2025</em></p>
             <!-- <p><em>Last Updated: January 15, 2025</em></p> -->
         </div>
     </div>
