@@ -123,26 +123,25 @@
             <ul>
                 <li>Required by law</li>
                 <li>With service providers (Firebase) under confidentiality agreements</li>
-                <li>With friends you've connected with (car collection data only)</li>
-                <li>For public map features (when you add location to photos)</li>
+                <li>With friends you've connected with (car collection data only - friends can view your car collection but cannot see your car locations on the map)</li>
+                <li>For administrative purposes (our admin can view all data for moderation and support)</li>
             </ul>
-                         <p><strong>Important:</strong> Photos with location data appear on the public map visible to all users.</p>
+            <p><strong>Important:</strong> Your car locations and map data are private - only you can see your cars on the map. However, friends you've connected with can still view your car collection details through the friends feature.</p>
              
-             <h2>6.1. Map and Location Details</h2>
+             <h2>6.1. Map and Location Privacy</h2>
              <p>Our mapping system works as follows:</p>
              <ul>
-                 <li><strong>Public Map Display:</strong> When you add location data to a car photo, it becomes visible on the public map that all app users can see</li>
+                 <li><strong>Private Map Display:</strong> Only you can see your own cars on the map - other users (including friends) cannot see your car locations</li>
                  <li><strong>Location Accuracy:</strong> We collect precise GPS coordinates when you enable location for a car spotting</li>
-                 <li><strong>Community Interaction:</strong> Other users can view, verify, and interact with your location-tagged car spots</li>
-                 <li><strong>Privacy Controls:</strong> You can choose to save car photos without location data to keep them private from the public map</li>
-                 <li><strong>Location Sharing:</strong> Each photo upload gives you the option to include or exclude location data</li>
+                 <li><strong>Friends Access:</strong> While friends can view your car collection details, they cannot see the location data or view your cars on the map</li>
+                 <li><strong>Privacy Controls:</strong> All location data is private by default - no other users can access your car locations</li>
+                 <li><strong>Location Storage:</strong> GPS coordinates are securely stored in Firebase Firestore with strict access controls limiting visibility to you and our admin only</li>
                  <li><strong>Map Technology:</strong> We use MapLibre GL, an open-source mapping library that processes data locally on your device</li>
-                 <li><strong>Location Storage:</strong> GPS coordinates are securely stored in Firebase Firestore with restricted access controls</li>
-                 <li><strong>Data Removal:</strong> Deleting a car photo also removes its associated location data from the map</li>
-                 <li><strong>Content Moderation:</strong> We reserve the right to remove inappropriate photos or car entries from the public map to maintain community standards and app security</li>
+                 <li><strong>Data Removal:</strong> Deleting a car photo also removes its associated location data</li>
+                 <li><strong>Content Moderation:</strong> Our admin can view and moderate car data for security and community standards, but regular users can only see their own data</li>
             </ul>
 
-             <p><strong>⚠️ Important Warning:</strong> Any car photo you add with location data will be publicly visible to ALL app users on the map. Only add location data if you're comfortable with public visibility of that car spotting.</p>
+             <p><strong>✅ Privacy Summary:</strong> Your map shows only your own cars. Friends can see your car collection details but NOT your car locations or map data.</p>
 
             <h2>7. Your Rights & Controls</h2>
             <p>You can:</p>
@@ -169,9 +168,9 @@
             
             <p><strong>Cloud AI Identification:</strong> Optional car identification using Google's Gemini AI. Photos are sent to Google's API for analysis (not permanently stored), with 2 free uses per user. Results include confidence scores - verify before relying on them.</p>
             
-            <p><strong>Community Features:</strong> Users can verify car spot locations. Verification data is anonymized and helps improve spot accuracy. <strong>Location Confirmation:</strong> Cars without verification in the last 3 days are automatically hidden from the public map to maintain data quality, but remain visible to the original spotter.</p>
+            <p><strong>Friends & Collection Sharing:</strong> Users can connect with friends to view each other's car collections. Friends can see your car details, photos, and collection information, but cannot see your car locations on the map or access your private location data.</p>
             
-            <p><strong>Location & Mapping:</strong> Our interactive map displays car spotting locations and allows you to explore the automotive community. Precise location data is collected only when you choose to use mapping features. Location information is associated with individual car photos when you enable it. Map data is processed locally on your device using MapLibre GL. All location sharing is under your control - you can choose to share car photos with or without location data for each individual photo.</p>
+            <p><strong>Private Location & Mapping:</strong> Our interactive map displays only your own car spotting locations for personal reference. Precise location data is collected only when you choose to use mapping features and remains completely private to your account (plus admin access for moderation). Location information is associated with individual car photos when you enable it. Map data is processed locally on your device using MapLibre GL. All location data is private by default - no other users can see your car locations.</p>
 
             <h2>9.1. Photo Reporting System</h2>
             <p>Our app includes a photo reporting system that allows users to report inappropriate or concerning content:</p>
