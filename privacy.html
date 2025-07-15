@@ -70,7 +70,7 @@
             <h2>2. Information We Collect</h2>
             <p><strong>Account & Profile Data:</strong> Email, username, name, encrypted password, and optional profile photo.</p>
             
-            <p><strong>User Content:</strong> Vehicle photos, car collection data, specifications, friend connections, location data for car spottings, shared images, and optional car videos (stored locally only).</p>
+            <p><strong>User Content:</strong> Vehicle photos, car collection data, specifications, friend connections, location data for car spottings, shared images, profile photos, and optional car videos (stored locally only).</p>
             
             <p><strong>Device & Usage Data:</strong> Device model and OS version for app compatibility and functionality.</p>
             
@@ -84,11 +84,12 @@
             </ul>
 
             <h2>3. Third-Party Services</h2>
-            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), Google Gemini AI (AI car identification), and MapLibre GL (mapping). These services may collect device information and have their own privacy policies:</p>
+            <p>We use Firebase (Authentication, Cloud Storage, Firestore), Google ML Kit (license plate/face detection), TensorFlow Lite (on-device car detection), Google Gemini AI (AI car identification), MapLibre GL (mapping), and <strong>Cloudinary</strong> (external photo storage and delivery). These services may collect device information and have their own privacy policies:</p>
             <ul>
                 <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Privacy Policy</a></li>
                 <li><a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a></li>
                 <li><a href="https://ai.google.dev/gemini-api/terms" target="_blank">Google Gemini API Terms</a></li>
+                <li><a href="https://cloudinary.com/privacy" target="_blank">Cloudinary Privacy Policy</a></li>
                 <li><strong>MapLibre GL:</strong> Open-source mapping library that processes data locally on your device with no data collection or external transmission</li>
             </ul>
 
@@ -113,17 +114,17 @@
             <p>We analyze car brand and model data from our database to identify vehicles that may need additional specifications. This helps us maintain accurate car information for all users. Only vehicle identification data (not personal information) is processed for database improvement purposes.</p>
 
             <h2>5. Data Security & Storage</h2>
-            <p>Your data is stored on secure Firebase servers with encrypted transmission, secure authentication, and access controls. Passwords are hashed, never stored in plain text. Car detection and privacy blurring (license plates/faces) occur on your device, not our servers.</p>
+            <p>Your data is stored on secure Firebase servers with encrypted transmission, secure authentication, and access controls. <strong>Photos you upload may also be stored and processed by Cloudinary, a secure third-party media storage provider, for the purpose of reliable photo storage and delivery.</strong> Passwords are hashed, never stored in plain text. Car detection and privacy blurring (license plates/faces) occur on your device, not our servers.</p>
 
 
 
             <h2>6. Data Sharing</h2>
-            <p><strong>PERMANENT POLICY: AutoSpotter will NEVER sell your personal information to third parties.</strong> This is a core commitment that cannot be changed. Data is shared solely with trusted service providers to enable core app functionality, under strict confidentiality agreements and in accordance with applicable privacy laws. We only share data when:</p>
+            <p><strong>PERMANENT POLICY: AutoSpotter will NEVER sell your personal information to third parties.</strong> This is a core commitment that cannot be changed. Data is shared solely with trusted service providers to enable core app functionality, under strict confidentiality agreements and in accordance with applicable privacy laws. <strong>Photos you upload may be processed and stored by Cloudinary solely to provide secure and reliable photo storage and delivery within the app. Cloudinary does not access or use your photos for any other purpose.</strong> We only share data when:</p>
             <ul>
                 <li>Required by law</li>
                 <li>With service providers (Firebase) under confidentiality agreements</li>
-                <li>With friends you've connected with (car collection data only - friends can view your car collection but cannot see your car locations on the map)</li>
-                <li>With all users via the public Spot Feed (photo, caption, vehicle make/model, like count, and your display name/avatar only; no location data) unless you disable feed sharing in settings</li>
+                <li>With friends you've connected with (car collection data and profile photos - friends can view your car collection and profile photo but cannot see your car locations on the map)</li>
+                <li>With all users via the public Spot Feed (photo, caption, vehicle make/model, like count, city/country location (not precise coordinates), and your display name/avatar only; no precise location data) unless you disable feed sharing in settings</li>
                 <li>For administrative purposes (our admin can view all data for moderation and support)</li>
             </ul>
             <p><strong>Important:</strong> Your car locations and map data are private - only you can see your cars on the map. However, friends you've connected with can still view your car collection details through the friends feature.</p>
@@ -141,7 +142,7 @@
                  <li><strong>Content Moderation:</strong> Our admin can view and moderate car data for security and community standards, but regular users can only see their own data</li>
             </ul>
 
-             <p><strong>✅ Privacy Summary:</strong> Your map shows only your own cars. Friends can see your car collection details but NOT your car locations or map data.</p>
+             <p><strong>✅ Privacy Summary:</strong> Your map shows only your own cars. Friends can see your car collection details and profile photo but NOT your car locations or map data.</p>
 
             <h2>7. Your Rights & Controls</h2>
             <p>You can:</p>
@@ -168,7 +169,7 @@
             
             <p><strong>Cloud AI Identification:</strong> Optional car identification using Google's Gemini AI. Photos are sent to Google's API for analysis (not permanently stored), with 1 free use per user. Results include confidence scores - verify before relying on them.</p>
             
-            <p><strong>Friends & Collection Sharing:</strong> Users can connect with friends to view each other's car collections. Friends can see your car details, photos, and collection information, but cannot see your car locations on the map or access your private location data.</p>
+            <p><strong>Friends & Collection Sharing:</strong> Users can connect with friends to view each other's car collections and profile photos. Friends can see your car details, photos, collection information, and profile photo, but cannot see your car locations on the map or access your private location data.</p>
             
             <p><strong>Private Location & Mapping:</strong> Our interactive map displays only your own car spotting locations for personal reference. Precise location data is collected only when you choose to use mapping features and remains completely private to your account (plus admin access for moderation). Location information is associated with individual car photos when you enable it. Map data is processed locally on your device using MapLibre GL. All location data is private by default - no other users can see your car locations.</p>
 
@@ -196,13 +197,13 @@
             </ul>
 
             <h2>9.3. Public Spot Feed</h2>
-            <p>The Spot Feed lets the AutoSpotter community browse recently uploaded car photos. When enabled, each photo you upload may appear in the feed together with its caption, brand, model, like count, and your basic profile information. Precise location data is never shown.</p>
+            <p>The Spot Feed lets the AutoSpotter community browse recently uploaded car photos. When enabled, each photo you upload may appear in the feed together with its caption, brand, model, like count, general location (city and country only), and your basic profile information. Precise location coordinates are never shown.</p>
             <ul>
                 <li><strong>Visibility:</strong> Feed posts are visible to all AutoSpotter users.</li>
                 <li><strong>Opt-out:</strong> You can hide all of your cars from the feed at any time in Settings → Privacy. This removes existing and future posts from the feed.</li>
                 <li><strong>Existing cars consent:</strong> Car photos you uploaded <em>before</em> this feature update remain hidden until you explicitly grant permission when prompted on Home Screen.</li>
                 <li><strong>Interactions:</strong> Other users can like and report feed posts. Reported content is reviewed as described in Section 9.1 above and in our Terms of Service.</li>
-                <li><strong>Location Safety:</strong> Even in the feed, location data remains private and is never attached to the post.</li>
+                <li><strong>Location Safety:</strong> Only general location information (city and country) is shown in the feed. Precise GPS coordinates remain private and are never attached to the post.</li>
             </ul>
 
             <h2>10. Important Notes</h2>
