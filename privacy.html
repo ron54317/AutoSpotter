@@ -107,6 +107,7 @@
             <ul>
                 <li><strong>Account Management:</strong> To create and maintain your user account and profile.</li>
                 <li><strong>Feature Functionality:</strong> To enable app features such as processing your photos (applying AI car detection and blurring license plates/faces) and managing your car collection.</li>
+                <li><strong>Country Discovery:</strong> To power the Country Spots browsing experience, which surfaces publicly shared cars by country using the ISO country code stored with each eligible upload.</li>
                 <li><strong>AI Services:</strong> To provide car identification via Google Gemini when you opt in (as described above). We also track usage of this AI feature to enforce any usage limits.</li>
                 <li><strong>Social Features:</strong> To support friend connections and sharing between users (e.g., allowing you to view your friends' collections).</li>
                 <li><strong>Mapping and Locations:</strong> To enable mapping of your car spottings and related features.</li>
@@ -217,6 +218,19 @@
                 <li><strong>Friend Requests:</strong> While browsing the feed, users can send you a friend request by clicking the request button next to your post. To facilitate this, your display name and profile photo must be visible.</li>
             </ul>
             <p><strong>Note:</strong> Posting to the Feed is optional. All users can see public feed posts, but your exact location remains hidden.</p>
+
+            <h2>9.4 Country Browsing Feature</h2>
+            <p>AutoSpotterX includes a "Country Spots" feature that allows users to browse car sightings organized by country:</p>
+            <ul>
+                <li><strong>Country-Level Display:</strong> Users can explore public car spots from specific countries (e.g., United Kingdom, United States, UAE, Germany, etc.). This feature shows only country-level location data—no precise GPS coordinates or street addresses are ever displayed.</li>
+                <li><strong>Educational Content:</strong> Each country section includes curated descriptions of local automotive culture and popular car spotting locations (e.g., "Sloane Street in London" or "Beverly Hills in California"). This information is provided for educational and community purposes to help enthusiasts discover car spotting opportunities.</li>
+                <li><strong>Public Feed Integration:</strong> Only cars that are not marked as hidden from the feed during upload appear in the country browsing feature. If you choose to hide a specific photo from the feed when uploading, it will be excluded from country browsing as well.</li>
+                <li><strong>Information Shown:</strong> For each country, users can see car photos and make/model details. Unlike the main feed, usernames and profile information are not displayed in the country browsing view to provide a streamlined browsing experience focused on the vehicles.</li>
+                <li><strong>Rarity Filter:</strong> Similar to the public feed, only rare vehicles (RARE+ classification) are shown from users with Auto XP ≤3600. Users with higher XP levels can have any vehicle appear in country browsing.</li>
+                <li><strong>Country Code Storage:</strong> To enable this feature, we store an ISO country code (e.g., "US" for United States, "GB" for United Kingdom) with each public spot. This code is derived from the city/country information you provide or from your device's location data if enabled.</li>
+                <li><strong>Privacy Maintained:</strong> The country browsing feature shows even less personal information than the main feed—no usernames, profile photos, or personal details are displayed. Your precise car locations, home address, and all personal data remain fully private.</li>
+            </ul>
+            <p><strong>Purpose:</strong> This feature helps users discover automotive culture and rare car sightings in different regions worldwide, while maintaining strong privacy protections for exact locations and user identities.</p>
 
             <h2>10. Children's Privacy</h2>
             <p>We do not knowingly collect information from or allow registration of children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal data, please contact us at zernoxi6@gmail.com. We will promptly delete any such information from our servers.</p>
