@@ -86,7 +86,7 @@
                 <li>Automatic license plate & face blurring for privacy</li>
             </ul>
 
-            <h2>2.1 AI Identification</h2>
+            <h2>2.1. AI Identification</h2>
             <ul>
                 <li>Optional Google Gemini API processing (1 free use per account).</li>
                 <li>Images are temporarily sent to Google for analysis (not permanently stored).</li>
@@ -131,15 +131,15 @@
                 <li>No excessive editing or misleading modifications.</li>
                 <li>No impersonation of AutoSpotterX, its staff, or other users.</li>
                 <li>Do not falsely classify vehicles to manipulate rarity.</li>
-                <li>Friends may see your collection & profile photo, but never your private location data.</li>
+                <li>Friends may see your collection & profile photo, but never your private location data. Location coordinates are stored only on your device and are never shared with anyone.</li>
             </ul>
             
             <h3>Public Feed Rules</h3>
             <ul>
                 <li>Users with ≤3600 Auto XP can upload only RARE+ cars.</li>
                 <li>Users with >3600 Auto XP can upload any car.</li>
-                <li>Feed posts display: photo, vehicle details, caption, timestamp, city/country, and your profile info.</li>
-                <li>GPS coordinates remain private.</li>
+                <li>Feed posts display: photo, vehicle details, caption, timestamp, country name (derived from coordinates), and your profile info.</li>
+                <li>GPS coordinates are never uploaded to our servers. They are stored exclusively on your device. Only country-level information (country name and country code) is derived from your coordinates and uploaded to enable country-based features like the Feed and Country Spots browsing.</li>
             </ul>
 
             <h3>Country Browsing Feature</h3>
@@ -150,9 +150,9 @@
                 <li>Only cars not marked as "hidden from feed" during upload appear in country browsing.</li>
                 <li>Country browsing follows the same rarity rules as the public feed: users with ≤3600 Auto XP can only share RARE+ cars, while users with >3600 Auto XP can share any vehicle.</li>
                 <li>Country browsing displays car photos and make/model details only. Usernames and profile information are not shown in this view.</li>
-                <li>Country-level location (e.g., "United States") is displayed, but precise GPS coordinates and street addresses remain private.</li>
-                <li>An ISO country code (e.g., "US", "GB") is stored with each public spot to enable this feature.</li>
-                <li>This feature is designed to help users discover automotive culture worldwide while maintaining privacy.</li>
+                <li>Country-level location (e.g., "United States") is displayed, but precise GPS coordinates and street addresses remain private and are never uploaded to our servers.</li>
+                <li>To enable this feature, the App derives the country name and ISO country code (e.g., "US", "GB") from your GPS coordinates using reverse geocoding. Only this country-level information is uploaded to our servers—your exact coordinates remain stored exclusively on your device.</li>
+                <li>This feature is designed to help users discover automotive culture worldwide while maintaining maximum privacy for your exact location data.</li>
             </ul>
 
             <h2>5. Prohibited Conduct</h2>
@@ -180,10 +180,18 @@
 
             <h2>7. Privacy & Safety</h2>
             <ul>
-                <li>All precise car locations are private to you.</li>
-                <li>Admins may access data for moderation/support.</li>
+                <li><strong>Location Data Storage:</strong> GPS coordinates for your car spottings are stored exclusively on your device in encrypted form. Location data is never uploaded to our servers or shared with anyone—not with other users, not with administrators, and not with third-party services. Only you have access to your location information.</li>
+                
+                <li><strong>Legacy Location Data:</strong> Earlier versions of the App (before the current privacy-focused update) used to collect and store location data on our servers, but was always stored privately and not visible to other users. This legacy data was private and only accessible to administrators for moderation purposes. If you update a car's location or delete a car entry that has legacy location data in our database, that old location data is automatically removed from our servers. If you wish to request immediate deletion of any remaining legacy location data, you can contact us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a>.</li>
+                
+                <li><strong>Country Information:</strong> To enable country-based features (like Country Spots browsing and Feed country display), the App derives the country name and country code from your GPS coordinates using reverse geocoding. Only this country-level information is uploaded to our servers—your exact coordinates are never uploaded or shared.</li>
+                
+                <li><strong>Location Updates:</strong> When you update a car's location, the new coordinates are saved locally on your device. If that car previously had location data stored on our servers (from older app versions), that old location data is automatically deleted from our database to maintain privacy.</li>
+                
                 <li>License plates and faces are blurred locally on your device before upload.</li>
+                
                 <li>You must not attempt to disable or bypass privacy protections.</li>
+                
                 <li>Always respect local laws, safety, and others' privacy when spotting cars.</li>
             </ul>
 
