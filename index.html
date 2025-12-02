@@ -41,11 +41,18 @@
             margin: 20px 0;
         }
         .navigation a {
-            color: #2c3e50;
+            color: #1e88ff;
             text-decoration: none;
             margin: 0 10px;
         }
         .navigation a:hover {
+            text-decoration: underline;
+        }
+        /* Global link style so all links use the same accent color */
+        a {
+            color: #1e88ff;
+        }
+        a:hover {
             text-decoration: underline;
         }
         .legal-links {
@@ -57,14 +64,50 @@
         .legal-button {
             display: inline-block;
             padding: 15px 30px;
-            background-color: #2c3e50;
-            color: white;
+            background-color: #1e88ff;
+            color: #ffffff;
             text-decoration: none;
             border-radius: 5px;
             transition: background-color 0.3s;
         }
         .legal-button:hover {
-            background-color: #34495e;
+            background-color: #1565c0;
+        }
+
+        /* System dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+                color: #f5f5f5;
+            }
+            .content {
+                background: #101010;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            }
+            header {
+                background-color: #000000;
+                color: #f5f5f5;
+                border-bottom: 1px solid #222222;
+            }
+            .navigation a {
+                color: #1e88ff;
+            }
+            .navigation a:hover {
+                text-decoration: underline;
+            }
+            .legal-button {
+                background-color: #1e88ff;
+                color: #ffffff;
+            }
+            .legal-button:hover {
+                background-color: #1565c0;
+            }
+            a {
+                color: #64b5ff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
         }
     </style>
 </head>

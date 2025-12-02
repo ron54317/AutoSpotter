@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,226 +12,313 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f5f6fa;
         }
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
             padding: 20px;
         }
+
         header {
             background-color: #2c3e50;
             color: white;
             padding: 1rem;
             text-align: center;
         }
+
         h1 {
             margin: 0;
             padding: 20px 0;
         }
+
         h2 {
             color: #2c3e50;
             margin-top: 30px;
         }
+
         .content {
             background: white;
             padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+
         .navigation {
             text-align: center;
             margin: 20px 0;
         }
+
         .navigation a {
-            color: #2c3e50;
+            color: #1e88ff;
             text-decoration: none;
             margin: 0 10px;
         }
+
         .navigation a:hover {
             text-decoration: underline;
         }
+
+        /* Global link style so all links use the same accent color */
+        a {
+            color: #1e88ff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* System dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+                color: #f5f5f5;
+            }
+            .content {
+                background: #101010;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            }
+            header {
+                background-color: #000000;
+                color: #f5f5f5;
+                border-bottom: 1px solid #222222;
+            }
+            h2 {
+                color: #ffffff;
+            }
+            .navigation a {
+                color: #64b5ff;
+            }
+            .navigation a:hover {
+                text-decoration: underline;
+            }
+            a {
+                color: #64b5ff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <h1>AutoSpotterX Terms of Service</h1>
     </header>
-    
+
     <div class="container">
         <div class="navigation">
             <a href="index.html">Home</a>
             <a href="terms.html">Terms of Service</a>
             <a href="privacy.html">Privacy Policy</a>
         </div>
-        
+
         <div class="content">
             <h2>AutoSpotterX – Terms of Service</h2>
-            <p><em>Last Updated: November 12, 2025</em></p>
+            <p><em>Last Updated: December 2, 2025</em></p>
 
             <h2>1. Acceptance of Terms</h2>
-            <p>By downloading, installing, or using the AutoSpotterX application ("the App"), you agree to be bound by these Terms of Service ("Terms"). If you do not agree, do not use the App. These Terms form a legally binding agreement between you and AutoSpotterX (Developer: Zarnox2525).</p>
-            
-            <p>Use of the App is also governed by our <a href="privacy.html">Privacy Policy</a>, which explains how we collect, use, and protect your data.</p>
+            <p>By using AutoSpotterX ("the App"), you're agreeing to these Terms of Service. If you don't agree, please
+                don't use the App. Your use is also governed by our <a href="privacy.html">Privacy Policy</a>.</p>
 
             <h2>2. Description of Service</h2>
-            <p>AutoSpotterX is a mobile platform for car enthusiasts and spotters. Features include:</p>
-            <ul>
-                <li>Car spotting & photo sharing</li>
-                <li>Car information database & rarity classification</li>
-                <li>Personal car collection management</li>
-                <li>Social features (friends, likes, reports, collections)</li>
-                <li>AI-powered car detection & optional AI identification via Google Gemini API</li>
-                <li>Private, location-based car mapping for personal reference</li>
-                <li>Country-based browsing to explore car spots by region</li>
-                <li>Secure photo storage & processing via Firebase and Cloudinary</li>
-                <li>Automatic license plate & face blurring for privacy</li>
-            </ul>
+            <p>AutoSpotterX is a mobile application that allows car enthusiasts to spot, document, and share real-world automotive sightings. The app provides a vehicle database with rarity classification, personal collection management, social features (including friends, likes, public feed, and country spots), private mapping for your own spots, and gamification features (AutoXP points and leaderboards).</p>
 
-            <h2>2.1. AI Identification</h2>
-            <ul>
-                <li>Optional Google Gemini API processing (1 free use per account).</li>
-                <li>Images are temporarily sent to Google for analysis (not permanently stored).</li>
-                <li>Results include confidence scores but are not guaranteed to be accurate.</li>
-                <li>Users must verify results; AutoSpotterX is not responsible for incorrect identifications.</li>
-            </ul>
+            <p><strong>AI Identification:</strong> Optional AI-powered car identification. Each account receives one
+                free use. Additional uses may require payment in the future. AI results may be inaccurate—do not rely on
+                them for legal or commercial purposes.</p>
+
+            <p>We reserve the right to modify, suspend, or discontinue any feature at any time without notice. The
+                Service is provided "as is" without guarantees of availability or error-free operation.</p>
 
             <h2>3. User Accounts</h2>
-            <p>You must be at least 13 years old to create an account. Where local law requires a higher age (e.g. 16 in parts of Europe), that age applies.</p>
-            
-            <p>If you are under the minimum age in your country, you may only use the App with parental/guardian consent.</p>
-            
-            <p>You agree to:</p>
-            <ul>
-                <li>Provide accurate information when registering</li>
-                <li>Keep your login credentials secure</li>
-                <li>Be responsible for all activities under your account</li>
-                <li>One account per user. Accounts are non-transferable.</li>
-            </ul>
+            <p>You must be at least 13 years old (16 in some EU countries) to use the App. If you're under the minimum
+                age, a parent or legal guardian must review and agree to these Terms on your behalf before you can use the App.</p>
+            <p>Please provide accurate information when creating your account and keep it secure. You're responsible for
+                all activity under your account.
 
             <h2>4. User Content</h2>
-            <p>You retain ownership of your photos and content. However, by uploading, you grant AutoSpotterX and its third-party providers (Firebase, Cloudinary) a worldwide, non-exclusive license to store, process, and deliver your content for App functionality.</p>
-            
-            <h3>Content Licensing and Promotion</h3>
-            <p>By sharing content in the App, you grant AutoSpotterX a worldwide, non-exclusive, royalty-free license to use, reproduce, display, and distribute your content (including photos, captions, and vehicle information) for promotional and marketing purposes, including but not limited to:</p>
+            <p>You are solely responsible for all content you upload or share through the App. You must make
+                sure your content is legal, does not infringe on anyone else's rights (including privacy and copyright),
+                and complies with all applicable laws.</p>
+
+            <p>You own your content. By uploading, you grant us permission to store, display, and process your content
+                to operate the App. If you share content publicly (on the public feed), we may also use it for
+                promotional purposes. To opt out of promotional use, disable public sharing in your privacy settings (Settings → Privacy → "Hide My Cars from Feed") or hide individual cars when uploading. You retain all
+                copyright and ownership.</p>
+            <p>We do not actively monitor all content and are not responsible for content posted by users. However, we
+                reserve the right (but are not obligated) to review, remove, or report any content that we believe
+                violates these Terms or any applicable law.</p>
+
+            <p><strong>Content Rules:</strong></p>
             <ul>
-                <li>Social media promotion (e.g., Instagram, Facebook, Twitter, TikTok, YouTube)</li>
-                <li>Marketing materials and advertisements</li>
-                <li>App store listings and promotional screenshots</li>
-                <li>Press releases and media coverage</li>
-                <li>Website and blog content</li>
-                <li>Other promotional activities to promote the App and its features</li>
-            </ul>
-            <p>This license applies to content you share publicly in the App (such as posts in the public feed). When we use your content for promotional purposes, we will credit you by your display name or username when feasible and appropriate. If you do not wish your content to be used for promotional purposes, you can disable sharing to the public feed in your privacy settings.</p>
-            <p>This license is limited to uses necessary to operate, improve, and promote AutoSpotterX, and does not transfer ownership of the content to AutoSpotterX.</p>
-            
-            <h3>Content Rules</h3>
-            <ul>
-                <li>Only upload photos you personally took of real vehicles.</li>
-                <li>Do not upload images from Google, social media, or AI-generated content.</li>
-                <li>Respect private property and personal privacy.</li>
-                <li>No excessive editing or misleading modifications.</li>
-                <li>No impersonation of AutoSpotterX, its staff, or other users.</li>
-                <li>Do not falsely classify vehicles to manipulate rarity.</li>
-                <li>Friends may see your collection & profile photo, but never your private location data. Location coordinates are stored only on your device and are never shared with anyone.</li>
-            </ul>
-            
-            <h3>Public Feed Rules</h3>
-            <ul>
-                <li>Users with ≤3600 Auto XP can upload only RARE+ cars.</li>
-                <li>Users with >3600 Auto XP can upload any car.</li>
-                <li>Feed posts display: photo, vehicle details, caption, timestamp, country name (derived from coordinates), and your profile info.</li>
-                <li>GPS coordinates are never uploaded to our servers. They are stored exclusively on your device. Only country-level information (country name and country code) is derived from your coordinates and uploaded to enable country-based features like the Feed and Country Spots browsing.</li>
+                <li><strong>Original photos only:</strong> Upload only photos you personally took. No internet downloads, screenshots, stock photos, AI-generated images, or content taken from other apps or websites.</li>
+                <li><strong>Real Cars only:</strong> Upload only real cars spotted in the real world. No toy cars, video game screenshots, dealership photos, or museum brochures.</li>
+                <li><strong>Blur license plates and faces:</strong> Ensure all license plates and faces are properly blurred before upload. You are responsible for any privacy violations.</li>
+                <li><strong>No personal or sensitive data:</strong> Avoid capturing people, home addresses, or other personal identifiers. If present, they must be blurred.</li>
+                <li><strong>Respect private property:</strong> Do not enter private areas or capture photos through gates/garages where there is an expectation of privacy.</li>
+                <li><strong>Clear visibility:</strong> Photos must clearly show the car. Extremely blurry, dark, or obstructed photos may be removed.</li>
+                <li><strong>Accurate information:</strong> Provide correct vehicle details and do not impersonate other people or misrepresent ownership or authorship of photos.</li>
             </ul>
 
-            <h3>Country Browsing Feature</h3>
-            <ul>
-                <li>AutoSpotterX includes a "Country Spots" feature that organizes car sightings by country.</li>
-                <li>Users can browse car spots from specific countries (e.g., United Kingdom, United States, UAE, Germany, etc.).</li>
-                <li>Each country section includes educational descriptions of local automotive culture and popular spotting locations (e.g., known streets, districts, or landmarks where exotic cars are commonly seen).</li>
-                <li>Only cars not marked as "hidden from feed" during upload appear in country browsing.</li>
-                <li>Country browsing follows the same rarity rules as the public feed: users with ≤3600 Auto XP can only share RARE+ cars, while users with >3600 Auto XP can share any vehicle.</li>
-                <li>Country browsing displays car photos and make/model details only. Usernames and profile information are not shown in this view.</li>
-                <li>Country-level location (e.g., "United States") is displayed, but precise GPS coordinates and street addresses remain private and are never uploaded to our servers.</li>
-                <li>To enable this feature, the App derives the country name and ISO country code (e.g., "US", "GB") from your GPS coordinates using reverse geocoding. Only this country-level information is uploaded to our servers—your exact coordinates remain stored exclusively on your device.</li>
-                <li>This feature is designed to help users discover automotive culture worldwide while maintaining maximum privacy for your exact location data.</li>
-            </ul>
+            <p><strong>Privacy Protection:</strong> AutoSpotterX does not guarantee automatic blurring or privacy protection. You are solely responsible for any privacy violations.</p>
+
+            <p><strong>Content Visibility:</strong> Common cars are not accepted. Uncommon cars are stored privately. Only RARE+ cars can appear in the feed and country spots if your privacy settings allow it.</p>
+
+            <p><strong>Originality Detection:</strong> We use metadata to detect non-original photos. If detected, they won't appear in the feed or country spots but will be stored in your private collection. We may delete photos determined to be not original.</p>
 
             <h2>5. Prohibited Conduct</h2>
-            <p>You may not:</p>
+            <p>To keep AutoSpotterX safe and fair for everyone, please don't:</p>
             <ul>
-                <li>Post illegal, hateful, harassing, pornographic, or violent content</li>
-                <li>Share private/personal data of others without consent</li>
-                <li>Upload copyrighted material without permission</li>
-                <li>Use the App for commercial purposes without approval</li>
-                <li>Spam or abuse friend requests/messages</li>
-                <li>Attempt to hack, reverse engineer, or bypass usage limits</li>
-                <li>Misuse AI identification for non-automotive content</li>
-                <li>Post AI-generated or deepfake car images</li>
-                <li>Circumvent security, abuse reports, or harass users</li>
+                <li>Upload photos from the internet, screenshots, AI images, or content you didn't personally create</li>
+                <li>Upload content that contains nudity, pornography, or sexually explicit material</li>
+                <li>Upload images of violence, abuse, self-harm, or illegal activity</li>
+                <li>Post offensive, discriminatory, or hate-based content</li>
+                <li>Use copyrighted material without permission or upload content you do not have the right to upload</li>
+                <li>Upload photos with visible license plates or faces</li>
+                <li>Take photos on private property without permission</li>
+                <li>Impersonate any person or entity, or mislead others about your identity or affiliation</li>
+                <li>Use the App while driving or in dangerous situations</li>
+                <li>Try to hack, reverse engineer, or otherwise tamper with the App or our services</li>
+                <li>Use the App for commercial purposes without our written approval</li>
+                <li>Harass, bully, or abuse other users</li>
+                <li>Create multiple accounts to get around restrictions or bans</li>
             </ul>
+            <p><strong>Safety First:</strong> You're responsible for your own safety when using the App. Please don't
+                trespass or put yourself or others in danger. Stay safe and follow all traffic laws.</p>
+            <p>If these rules are violated, we may need to remove content or suspend accounts to keep the community
+                safe.</p>
 
-            <h2>6. Moderation & Enforcement</h2>
-            <p>AutoSpotterX may review, remove, or hide any content at its discretion.</p>
-            
-            <p>Actions may include: warnings, content removal, feature restrictions, account suspension, or permanent bans.</p>
-            
-            <p>Community reporting is available; malicious/false reporting may result in action.</p>
-            
-            <p>You may appeal moderation decisions by emailing <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with "Content Appeal" in the subject line.</p>
+            <h2>6. Content Moderation</h2>
+            <p>While we do not manually review every photo, we reserve the right to review flagged content, remove
+                inappropriate or non-compliant content, and terminate or restrict access for repeat or severe
+                violations.</p>
+            <p>We may remove cars that violate these Terms or don't meet our requirements. Content can be removed if
+                administrators see violations or if users report it. Accounts that repeatedly violate these Terms may be
+                suspended or terminated.</p>
+            <p>You can report content through the in-app reporting feature. If you believe content was removed in error,
+                you may appeal by emailing <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with "Content
+                Appeal" in the subject line.</p>
 
-            <h2>7. Privacy & Safety</h2>
-            <ul>
-                <li><strong>Location Data Storage:</strong> GPS coordinates for your car spottings are stored exclusively on your device in encrypted form. Location data is never uploaded to our servers or shared with anyone—not with other users, not with administrators, and not with third-party services. Only you have access to your location information.</li>
-                
-                <li><strong>Legacy Location Data:</strong> Earlier versions of the App (before the current privacy-focused update) used to collect and store location data on our servers, but was always stored privately and not visible to other users. This legacy data was private and only accessible to administrators for moderation purposes. If you update a car's location or delete a car entry that has legacy location data in our database, that old location data is automatically removed from our servers. If you wish to request immediate deletion of any remaining legacy location data, you can contact us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a>.</li>
-                
-                <li><strong>Country Information:</strong> To enable country-based features (like Country Spots browsing and Feed country display), the App derives the country name and country code from your GPS coordinates using reverse geocoding. Only this country-level information is uploaded to our servers—your exact coordinates are never uploaded or shared.</li>
-                
-                <li><strong>Location Updates:</strong> When you update a car's location, the new coordinates are saved locally on your device. If that car previously had location data stored on our servers (from older app versions), that old location data is automatically deleted from our database to maintain privacy.</li>
-                
-                <li>License plates and faces are blurred locally on your device before upload.</li>
-                
-                <li>You must not attempt to disable or bypass privacy protections.</li>
-                
-                <li>Always respect local laws, safety, and others' privacy when spotting cars.</li>
-            </ul>
+            <h2>6A. Copyright and Takedown Complaints (DMCA)</h2>
+            <p>If you believe someone uploaded content that infringes your copyright, trademark, or other intellectual
+                property rights, you may submit a DMCA takedown notice by emailing us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with "DMCA Takedown Request" or "Copyright Complaint" in the subject line.</p>
+
+            <p>Your notice must include: (1) your contact information (name, address, phone, email), (2) identification of the copyrighted work claimed to be infringed, (3) identification of the infringing material (link or clear description), (4) a statement that you have a good faith belief the use is not authorized, (5) a statement that the information is accurate and you are authorized to act for the rights holder, and (6) your physical or electronic signature.</p>
+
+            <p>We'll review your notice and remove infringing content if appropriate. Repeat offenders may have their
+                accounts suspended or terminated.</p>
+
+            <h2>7. Privacy</h2>
+            <p>Your privacy is important. Our data practices are governed by our <a href="privacy.html">Privacy
+                    Policy</a>. We implement security measures but cannot guarantee
+                absolute security.</p>
 
             <h2>8. Intellectual Property</h2>
+            <p>All car brand names, logos, and trademarks (for example, Ferrari, Lamborghini) belong to their respective
+                owners and are used in the App only for descriptive purposes. AutoSpotterX is not affiliated with or
+                endorsed by any vehicle manufacturer.</p>
+            <p>Any logos or trademarks visible in uploaded photos are incidental and part of user-generated content. If
+                you are a rights holder and believe your intellectual property is being misused within the App, you may
+                submit a DMCA takedown request (see Section 6A) or contact us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a>.</p>
+
+            <h2>9. Third-Party Services</h2>
+            <p>The App uses third-party services (cloud storage, AI, etc.) that have their own terms. We're not
+                responsible for their availability, accuracy, security, or failures.</p>
+
+            <p>The App may link to external websites—we don't control those sites.</p>
+
+            <h2>10. Service Availability and Modifications</h2>
+            <p>We do our best to keep the App running smoothly, but we can't guarantee it'll be available 24/7 or
+                completely error-free. We may need to update, modify, or temporarily suspend features for maintenance or
+                improvements.</p>
+
+            <p>We reserve the right to make changes to the App or these Terms as needed. If we make significant changes
+                to the Terms, we'll update the "Last Updated" date and notify you through the App or email. Continuing
+                to use the App after changes means you accept them.</p>
+
+            <h2>11. Disclaimers</h2>
+            <p>The App is provided "as is" and "as available" without warranties of any kind, either express or
+                implied, including but not limited to warranties of merchantability, fitness for a particular purpose,
+                or non-infringement.</p>
+
+            <p>We do not guarantee that the App will be error-free, secure, continuously available, or free from
+                viruses. We are not responsible for the accuracy of user-generated content, third-party services, or AI
+                results.</p>
+
+            <p>AI identification is provided for informational purposes only. Please don't rely on AI results for
+                legal, financial, or safety-related decisions.</p>
+
+            <h2>12. Limitation of Liability</h2>
+            <p>To the maximum extent permitted by law, we are not liable for any direct, indirect, incidental,
+                consequential, special, or punitive damages arising from your use of the App, including but not limited
+                to: data loss, business interruption, lost profits, service interruptions, user content issues, AI
+                errors, or third-party service failures.</p>
+
+            <p>AutoSpotterX is not liable for any user-generated content. Users may be held legally accountable for any
+                content they upload or share that violates these Terms or applicable law.</p>
+
+            <p>Some jurisdictions don't allow certain liability limitations, so some of these may not apply to you.</p>
+
+            <h2>13. Your Responsibilities</h2>
+            <p>You agree to take responsibility for your use of the App, including:</p>
             <ul>
-                <li>AutoSpotterX's name, logo, and software are owned by Zarnox2525.</li>
-                <li>All rights not expressly granted are reserved.</li>
-                <li>Car brand names, logos, and models are trademarks of their respective owners. AutoSpotterX is not affiliated with or endorsed by any automaker.</li>
-                <li>Users retain copyright in their uploads but grant AutoSpotterX the license described in Section 4.</li>
+                <li>Any content you upload or share</li>
+                <li>Compliance with these Terms and applicable laws</li>
+                <li>Respecting others' intellectual property and privacy rights</li>
+                <li>Any activities conducted through your account</li>
             </ul>
 
-            <h2>9. Service Availability & Updates</h2>
+            <h2>14. Indemnification</h2>
+            </p>
+            <p>You agree to defend, indemnify, and hold harmless AutoSpotterX, its developer, and team from any
+                claims, damages, losses, liabilities, and expenses (including legal fees) arising from:</p>
             <ul>
-                <li>AutoSpotterX may change, suspend, or discontinue features at any time.</li>
-                <li>Service may be interrupted due to maintenance or factors outside our control.</li>
-                <li>We may update these Terms. Significant changes will be notified via the App or email. Continued use = acceptance.</li>
+                <li>Your use of the App</li>
+                <li>Content you upload or share</li>
+                <li>Your violation of these Terms</li>
+                <li>Your violation of any third-party rights (copyright, privacy, etc.)</li>
+                <li>Any harm caused to others through your actions</li>
             </ul>
+            <p>We reserve the right to control the defense of any claim, and you agree not to settle any claim without
+                our written consent.</p>
 
-            <h2>10. Legal Protections</h2>
-            <p><strong>Disclaimer:</strong> The App is provided "as is" without warranties of any kind (accuracy, uptime, or fitness for purpose).</p>
-            
-            <p><strong>Limitation of Liability:</strong> AutoSpotterX is not liable for any damages (direct, indirect, incidental, consequential, etc.) arising from use of the App, user content, AI inaccuracies, data loss, or third-party services.</p>
-            
-            <p><strong>Indemnification:</strong> You agree to indemnify and hold harmless AutoSpotterX, its developer, and partners against any claims, damages, or legal costs resulting from your content, conduct, or violations.</p>
-            
-            <p><strong>Governing Law:</strong> These Terms are governed by the laws of Israel, without regard to conflict of laws. Disputes shall be resolved in the courts of Tel Aviv, unless otherwise required by local law.</p>
-            
-            <p><strong>Severability:</strong> If any provision is invalid, the rest remain in effect.</p>
-            
-            <p><strong>Entire Agreement:</strong> These Terms + Privacy Policy = the entire agreement between you and AutoSpotterX.</p>
+            <h2>15. Dispute Resolution and Claims Deadline</h2>
+            <p>Any claim related to AutoSpotterX must be filed within 3 months of when it arose. After this period,
+                claims are permanently barred.</p>
+            <p>Before filing legal action, please contact us at <a
+                    href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> to resolve issues informally. Disputes will
+                be handled in Tel Aviv, Israel courts as stated in Section 17.</p>
 
-            <h2>11. Termination</h2>
-            <p>We may suspend or delete accounts that violate these Terms, remain inactive, or upon user request. Termination results in loss of all content, social connections, and account data.</p>
+            <h2>16. Class Action Waiver</h2>
+            <p>Disputes must be brought individually. You waive any right to participate in class action lawsuits or
+                class-wide arbitration. You may not join your claims with other users.</p>
 
-            <h2>12. Contact</h2>
-            <p>For legal, privacy, or support inquiries:</p>
-            <p>📧 <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a></p>
-            <p>(Developer: Zarnox2525)</p>
+            <h2>17. Governing Law</h2>
+            <p>These Terms are governed by Israeli law. Any legal disputes will be handled in the courts of Tel Aviv,
+                Israel.</p>
+            
+            <h2>18. Other Important Stuff</h2>
+            <p>These Terms and our Privacy Policy are the complete agreement. If part of it can't be enforced, the rest
+                still counts.</p>
+
+
+            <p>We'll notify you of updates via email or in-app. Contact us at <a
+                    href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a>.</p>
+
+            <h2>19. Account Deletion and Termination</h2>
+            <p>You may delete your account through app settings (immediate) or by emailing us at <a
+                    href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> with "Account Deletion" in the subject line (within 7 working days). Deletion is permanent and cannot be undone.</p>
+            
+            <p>We may suspend or terminate your account at any time if you violate these Terms or for any other reason. Some information may be retained as required by law.</p>
+
+
+            <h2>20. Contact</h2>
+            <p>For legal, privacy, or support, email us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a></p>
+
         </div>
     </div>
 </body>
+
 </html>

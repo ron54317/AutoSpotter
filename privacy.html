@@ -11,6 +11,7 @@
             margin: 0;
             padding: 0;
             color: #333;
+            background-color: #f5f6fa;
         }
         .container {
             max-width: 1000px;
@@ -42,12 +43,62 @@
             margin: 20px 0;
         }
         .navigation a {
-            color: #2c3e50;
+            color: #1e88ff;
             text-decoration: none;
             margin: 0 10px;
         }
         .navigation a:hover {
             text-decoration: underline;
+        }
+        /* Global link style so all links use the same accent color */
+        a {
+            color: #1e88ff;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* System dark mode support */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #000000;
+                color: #f5f5f5;
+            }
+            .content {
+                background: #101010;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+            }
+            header {
+                background-color: #000000;
+                color: #f5f5f5;
+                border-bottom: 1px solid #222222;
+            }
+            h2 {
+                color: #ffffff;
+            }
+            .navigation a {
+                color: #64b5ff;
+            }
+            .navigation a:hover {
+                text-decoration: underline;
+            }
+            a {
+                color: #64b5ff;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            /* Legacy location disclaimer box: keep orange accents, make background black in dark mode */
+            .location-legacy-box {
+                background-color: #000000 !important;
+                border-color: #FF9800;
+            }
+            .location-legacy-box p {
+                color: #f5f5f5 !important;
+            }
+            .location-legacy-box strong {
+                color: #FFB74D;
+            }
         }
     </style>
 </head>
@@ -143,7 +194,7 @@
             <h2>6.1 Map and Location Privacy</h2>
             <p>AutoSpotterX's mapping features handle location data with maximum privacy protection:</p>
             
-            <div style="border: 2px solid #FF9800; background-color: #FFF3E0; padding: 15px; border-radius: 8px; margin: 15px 0;">
+            <div class="location-legacy-box" style="border: 2px solid #FF9800; background-color: #FFF3E0; padding: 15px; border-radius: 8px; margin: 15px 0;">
                 <p style="margin: 0; color: #333; font-size: 14px;">
                     <strong style="color: #E65100;">📍 Location Privacy Update:</strong> As of November 27, 2025, GPS coordinates are stored exclusively on your device and never uploaded to our servers. Earlier app versions uploaded location data to Firebase. Legacy location data in Firebase was stored privately (not visible to other users) and remains private. It is automatically deleted when you update car loction or delete a car. Contact us at <a href="mailto:zernoxi6@gmail.com">zernoxi6@gmail.com</a> to request immediate deletion of any remaining legacy data.
                 </p>
@@ -169,14 +220,15 @@
                 <li>Website and blog content</li>
                 <li>Other promotional activities to promote the App and its features</li>
             </ul>
-            <p>This license applies to content you share publicly in the App (such as posts in the public feed). When we use your content for promotional purposes, we will credit you by your display name or username when feasible and appropriate. If you do not wish your content to be used for promotional purposes, you can disable sharing to the public feed in your privacy settings.</p>
+            <p>This license applies to content you share publicly in the App (such as posts in the public feed). When we use your content for promotional purposes, we will credit you by your display name or username when feasible and appropriate. To opt out of promotional use, disable sharing to the public feed in your privacy settings (Settings → Privacy → "Hide My Cars from Feed") or hide individual cars when uploading. Content that is not shared publicly will not be used for promotional purposes.</p>
             <p>This license is limited to uses necessary to operate, improve, and promote AutoSpotterX, and does not transfer ownership of the content to AutoSpotterX.</p>
 
             <h2>7. Your Rights and Controls</h2>
             <p>You have control over your personal data and account. You can view and update your profile information, delete your photos or entries, request data export, manage friends, control app permissions through device settings, and opt out of non-essential communications.</p>
+            <p><strong>Data Export:</strong> You can export your data through app settings. Your data will be provided in a portable format (typically ZIP file) that you can download and save.</p>
 
             <h2>8. Account and Data Deletion</h2>
-            <p>You can delete your entire account in app settings or by emailing us at zernoxi6@gmail.com (subject: "Account Deletion"). All personal data will be permanently deleted immediately (typically within minutes). Deleting individual photos or entries removes that content from our servers immediately. Deletion covers all personal data including profile info, photos, videos, car collection details, friend connections, and activity logs.</p>
+            <p>You can delete your entire account through app settings (deleted immediately, typically within minutes) or by emailing us at zernoxi6@gmail.com with "Account Deletion" in the subject line (deleted within 7 working days). All personal data will be permanently deleted. Deleting individual photos or entries removes that content from our servers immediately. Deletion covers all personal data including profile info, photos, videos, car collection details, friend connections, and activity logs.</p>
             <p><strong>Administrative Deletion:</strong> Content may also be deleted by administrators if it violates our Terms of Service. When administrators delete your content for policy violations, it is permanently removed from our servers (Firestore and Cloudinary). You will be notified via in-app notification if your content is deleted for policy violations.</p>
 
             <h2>9. Additional (Optional) Features</h2>
@@ -207,7 +259,7 @@
             <p>AutoSpotterX includes a "Country Spots" feature that allows users to browse car sightings organized by country. This feature shows only country-level location data, no precise GPS coordinates or street addresses (see Section 6.1). Users can see car photos and make/model details, but usernames and profile information are not displayed. Only RARE+ cars that were not hidden by the user when uploading appear in country browsing. Country codes are derived from coordinates and stored, but exact coordinates remain on your device.</p>
 
             <h2>10. Children's Privacy</h2>
-            <p>We do not knowingly collect information from or allow registration of children under 13 years of age. If you are a parent or guardian and believe your child has provided us with personal data, please contact us at zernoxi6@gmail.com. We will promptly delete any such information from our servers.</p>
+            <p>You must be at least 13 years old (16 in some EU countries) to use AutoSpotterX. We do not knowingly collect information from or allow registration of children under the minimum age. If you are under the minimum age, a parent or legal guardian must review and agree to this Privacy Policy on your behalf before you can use the App. If you are a parent or guardian and believe your child has provided us with personal data, please contact us at zernoxi6@gmail.com. We will promptly delete any such information from our servers.</p>
 
             <h2>11. Other Important Notes</h2>
             <p><strong>Data Retention:</strong> We retain your personal data only as long as necessary to provide the app services or as required by law. When you delete your account, we will remove your data from our systems immediately (typically within minutes, and within 30 days at most), except for any data we are legally required to keep (such as anonymized logs).</p>
